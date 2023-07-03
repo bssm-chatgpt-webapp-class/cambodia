@@ -1,17 +1,19 @@
 import React from 'react';
-import "./style.css"
-import {imageIcon} from "../../fixtures";
+import "./index.css"
+import {chatResponse, imageIcon} from "../../fixtures";
 import ChatItem from "../ChatItem";
 
-const Main = () => {
+const Main = ({question}) => {
     return (
         <div className="main">
             <ChatItem
-            imageLink={imageIcon}
-            text={"텍스트"}/>
-            <ChatItem
                 imageLink={imageIcon}
-                text={"텍스트"}/>
+                text={question}
+            />
+            <ChatItem
+                imageLink={"/images/gptjpg.png"}
+                text={chatResponse}
+            />
         </div>
 
     );

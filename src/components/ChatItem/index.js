@@ -1,15 +1,13 @@
 import React from 'react';
-import "./style.css"
+import "./index.css"
 import {imageIcon} from "../../fixtures";
 
 const ChatItem = ({imageLink, text}) => {
     return (
-        <div>
-            <div className="question">
+            <div className="chat-item">
                 <img width="30" height={"30"} style={{objectFit: "cover"}} src={imageLink} />
-                <div>{text}</div>
+                <pre>{text}</pre>
             </div>
-        </div>
     );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {HambugIcon, PlusIcon} from "../../icons"
-import "./style.css"
+import "./index.css"
 
 const Header = () => {
     return (

@@ -1,0 +1,7 @@
+.chat-item {
+    display: flex;
+}
+
+.chat-item pre {
+    white-space: pre-wrap;
+}

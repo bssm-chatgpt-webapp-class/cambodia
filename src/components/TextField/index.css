@@ -1,0 +1,7 @@
+.text-field{
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    background-color: rgba(52, 53, 65);
+    width: 100%;
+}
