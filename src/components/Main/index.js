@@ -1,11 +1,20 @@
 import React from 'react';
+import "./style.css"
+import {imageIcon} from "../../fixtures";
+import ChatItem from "../ChatItem";
 
-const Index = () => {
+const Main = () => {
     return (
-        <div>
-            <h1>Main</h1>
+        <div className="main">
+            <ChatItem
+            imageLink={imageIcon}
+            text={"텍스트"}/>
+            <ChatItem
+                imageLink={imageIcon}
+                text={"텍스트"}/>
         </div>
+
     );
 };
 
-export default Index;
+export default Main;

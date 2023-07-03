@@ -1,0 +1,1 @@
+export const imageIcon = "https://i.namu.wiki/i/kOlhO-WUjxautOYLnINYV5NFHf_RooGIyxrPPymg2oxm80qZgdaKyHK1UX-v9XG8iZRX7fpYn3uZYS4mk_OWfQ.webp"
