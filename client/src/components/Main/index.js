@@ -3,17 +3,17 @@ import "./index.css"
 import {chatResponse, imageIcon} from "../../fixtures";
 import ChatItem from "../ChatItem";
 
-const Main = ({question}) => {
+const Main = ({chatMessages}) => {
+
     return (
         <div className="main">
-            <ChatItem
-                imageLink={imageIcon}
-                text={question}
-            />
-            <ChatItem
-                imageLink={"/images/gptjpg.png"}
-                text={chatResponse}
-            />
+            {chatMessages.map((chatMessage) => {
+                return <ChatItem
+                    imageLink={chatMessage.isMine ? imageIcon : "/images/gptjpg.png"}
+                    text={chatMessage.message}
+                />
+
+            })}
         </div>
 
     );
